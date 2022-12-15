@@ -1,20 +1,29 @@
-// осн. ДЗ
+//основное дз do..while
 
-var series = {
-    name: 'Игра престолов',
-    releaseDate: 2011,
-    mainActor: 'Питер Динклэйдж, Тирион Ланнистер',
-    episodes: 40,
-    moreInformation:{
-        producer:'Дэвид Наттер',
-        country: 'USA'
+
+
+var input = prompt("Ведите свое имя")
+var blackList = ['aya', 'anna', 'jack', 'john']
+
+
+
+do{
+    if(blackList.includes(input)){
+        input = prompt('Введите имя')
+    }else{
+        alert(`Welcome ${input}`)
+        break;
     }
 }
-    
-var description = 'Cериал "' + series.name + '"  был выпушен ' + series.releaseDate+ ' года. ' + '\n B главных ролях ' + series.mainActor + '. В ' + series.name + series.episodes + ' эпизодов.'
-
-console.log(description);
-    
-
-
+while(true)
    
+//доп дз 
+
+for(var i = 0; i <= 20; i++){
+    let fdhnew = i/2;
+  let djd = fdhnew.toFixed(0);
+
+    if(djd==fdhnew){
+        console.log(i);
+    }
+}
